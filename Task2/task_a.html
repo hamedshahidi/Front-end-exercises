@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task A</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Form validation HTML5</h1>
+
+    <form action="form-submit.php" method="post">
+        
+        <!-- your input elements here -->
+        <fieldset>
+            <legend>Personal info</legend>
+            <br/>
+            First name:
+            <input type="text" name="first-name" pattern="^\D*$" title="Only alphabets" autofocus required>
+            <br/>
+            Last name:
+            <input type="text" name="last-name" pattern="^\D*$" title="Only alphabets" required>
+            <br/>
+            Email:
+            <input type="email" name="email" title="email-address" placeholder="name@domain.com" required>
+            <br/>
+            Phone number:
+            <input type="text" name="phone-number" required>
+            <br/>
+            Address:
+            <input type="text" name="address" required>
+            <br/>
+            Postal code:
+            <input type="number" name="postal-code" required>
+            <br/>
+            Password:
+            <input type="password" name="password" required>
+            <br/>
+            <input type="submit" name="submit-btn" value="send">
+            
+        
+        
+            
+        
+        </fieldset>
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
