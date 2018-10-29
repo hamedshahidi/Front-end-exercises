@@ -24,26 +24,22 @@
         <fieldset>
             <legend>Personal info</legend>
             <br/>
-            First name:
-            <input type="text" name="first-name" pattern="^\D*$" title="Only alphabets" autofocus required>
+            <input type="text" name="first-name" placeholder="First name" pattern="^\D*$" title="Only alphabets" autofocus required>
             <br/>
-            Last name:
-            <input type="text" name="last-name" pattern="^\D*$" title="Only alphabets" required>
+            <input type="text" name="last-name" placeholder="Last name" pattern="^\D*$" title="Only alphabets" required>
             <br/>
-            Email:
-            <input type="email" name="email" title="email-address" placeholder="name@domain.com" required>
             <br/>
-            Phone number:
-            <input type="text" name="phone-number" required>
+            <input type="email" name="email" placeholder="name@domain.com" title="email-address" required>
             <br/>
-            Address:
-            <input type="text" name="address" required>
+            <input type="text" name="phone-number" placeholder="Phone number"required>
             <br/>
-            Postal code:
-            <input type="number" name="postal-code" required>
+            <input type="text" name="address" placeholder="Address">
             <br/>
-            Password:
-            <input type="password" name="password" required>
+            <input type="number" name="postal-code" placeholder="Postal code"pattern="" title="Exactly 5 numbers">
+            <br/>
+            <br/>
+            <input type="password" name="password" placeholder="Password"required>
+            <br/>
             <br/>
             <input type="submit" name="submit-btn" value="send">
             
