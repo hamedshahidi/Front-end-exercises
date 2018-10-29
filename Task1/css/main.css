@@ -73,18 +73,20 @@ textarea {
     background-color: #c60f13;
 }
 
+body * {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     display: flex;
     flex-flow: row wrap;
 }
 
 body > * {
-    flex: 1 100%;
-}
-
-body * {
-	padding: 0;
-	margin: 0;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 100%;
 }
 
 header {
@@ -102,10 +104,7 @@ header h1 {
     color: #e9e9e9;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 
 figcaption {
@@ -153,6 +152,8 @@ li {
     main { order: 1;}
     aside { order: 2;}
 }
+
+
 
 
 
