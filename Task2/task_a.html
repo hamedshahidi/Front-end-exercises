@@ -36,7 +36,7 @@
             <input type="email" name="email" placeholder="name@domain.com" title="email-address" required>
             <br/>
             Phune number:
-            <input type="tel" name="phone-number" placeholder="e.g +123456789012" pattern="^[+]\d{12}$" required>
+            <input type="tel" name="phone-number" placeholder="e.g +123456789012" pattern="^[+]\d{5,}$" required>
             <br/>
             Address:
             <input type="text" name="address">
@@ -49,7 +49,7 @@
             <input type="password" name="password" required>
             <br/>
             <br/>
-            <input type="submit" name="submit-btn" value="send">
+            <input type="submit" id="sendBtn" name="submit-btn" value="send">
         </fieldset>
     </div>
 </form>

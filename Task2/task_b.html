@@ -16,13 +16,53 @@
 </head>
 
 <body>
-    <h1>Form validation JavaScript</h1>
+<h1>Form validation JavaScript</h1>
 
-    <form>
+<form novalidate method="post">
+    <div id="form-container">
         <!-- your input elements here -->
-    </form>
+        <fieldset>
+            <legend><h2>Personal info</h2></legend>
+            <br/>
+            First name:
+            <input type="text" name="first-name" pattern="^\D*$" title="Only alphabets"
+                   autofocus required>
+            <span id="first-name-s"></span>
+            <br/>
+            Last name:
+            <input type="text" name="last-name" pattern="^\D*$" title="Only alphabets" required>
+            <span id="last-name-s"></span>
+            <br/>
+            <br/>
+            Email:
+            <input type="email" name="email" placeholder="name@domain.com" pattern ="^[\w-\.]+@([\w-]+\.)+[\w-]{2,}$" title="email-address" required>
+            <span id="email-s"></span>
+            <br/>
+            Phune number:
+            <input type="tel" name="phone-number" placeholder="e.g +123456789012" pattern="^[+]\d{5,}$" required>
+            <span id="phone-number-s"></span>
+            <br/>
+            Address:
+            <input type="text" name="address">
+            <span id="address-s"></span>
+            <br/>
+            Postal code:
+            <input type="text" name="postal-code" placeholder="e.g. 00510" pattern="^\d{5}$" title="Exactly 5 numbers">
+            <span id="postal-code-s"></span>
+            <br/>
+            <br/>
+            Password:
+            <input type="password" name="password" required>
+            <span id="password-s"></span>
+            <br/>
+            <br/>
+            <input type="submit" id="sendBtn" name="submit-btn" value="send">
+        </fieldset>
+    </div>
+</form>
+
     
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

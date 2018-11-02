@@ -74,12 +74,33 @@ body > * {
 }
 
 #form-container{
-    max-width: 400px;
+    background-color: palegreen;
+    padding: 50px;
 }
 
 input {
     width: 100%;
 }
+
+form {
+    width: 800px;
+    min-width: 200px;
+}
+
+span{
+    color: red;
+}
+
+
+
+
+#sendBtn{
+    height: 32px;
+    width: 128px;
+    align-items:  center;
+    
+}
+
 
 
 
