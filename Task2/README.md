@@ -1,5 +1,11 @@
-### JavaScrip LAB 1 Form validation
+# Task 02
+# JavaScrip LAB 1 Form validation
 
+
+<a href=http://10.114.32.108/Front-end-tasks/Task2/index.html><b><h3>Link to completed task</h3></b></a>
+<br>
+<br>
+Task Description:
 
 ## Get started
   * Save this repository as zip `git clone https://github.com/ilkkamtk/BCW1.git` and extract it 
