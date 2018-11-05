@@ -31,7 +31,7 @@ const checkEmpty = (item) => {
   } else {
     formOK--;
     console.log("checkEmpty # / formOK -1 ="+formOK);
-    item.setAttribute('style', 'border: red 2px solid');
+    item.setAttribute('style', 'background-color: darksalmon');
     document.getElementById(item.name+"-s").innerHTML = errorMsg(item);
     console.log(item.name);
     console.log(item.name+"-s");
@@ -48,7 +48,7 @@ const checkPattern = (item) => {
   } else {
     formOK--;
     console.log("checkPattern # / formOK -1 ="+formOK)
-    item.setAttribute('style', 'border: red 2px solid');
+    item.setAttribute('style', 'background-color: darksalmon');
   }
 };
 

@@ -69,8 +69,8 @@ body {
 
 body > * {
     flex-shrink: 1;
-    flex-grow:1;
-    flex-basis:100%;
+    flex-grow: 1;
+    flex-basis: 100%;
 }
 
 #form-container{
@@ -83,8 +83,8 @@ input {
 }
 
 form {
-    width: 800px;
-    min-width: 200px;
+    width: 400px;
+    margin: 0 auto;
 }
 
 span{
@@ -164,6 +164,7 @@ span{
 
 .invisible {
     visibility: hidden;
+    
 }
 
 .clearfix:before,
