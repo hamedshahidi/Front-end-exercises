@@ -1,9 +1,7 @@
 # Task 03
 # AJAX
 
-<a href=http://10.114.32.108/Front-end-tasks/Task3/task-a.html><b><h3>Task A</h3></b></a>
-<a href=http://10.114.32.108/Front-end-tasks/Task3/task-b.html><b><h3>Task B</h3></b></a>
-<a href=http://10.114.32.108/Front-end-tasks/Task3/task-c.html><b><h3>Task C</h3></b></a>
+<a href=http://10.114.32.108/Front-end-tasks/Task3/task-a.html><b><h3>Task A</h3></b></a>,<a href=http://10.114.32.108/Front-end-tasks/Task3/task-b.html><b><h3>Task B</h3></b></a>,<a href=http://10.114.32.108/Front-end-tasks/Task3/task-c.html><b><h3>Task C</h3></b></a>
 <br>
 <br>
 Task Description:
