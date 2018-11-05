@@ -41,7 +41,7 @@ const showImages = (images) => {
            </figcaption>
         </figure>
     </li>`;
-  });
+  }).join('');
 };
 
 fetch('images.json').then((response) => {
