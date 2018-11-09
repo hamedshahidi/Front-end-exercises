@@ -28,7 +28,6 @@ const showImages = (images) => {
     figcaption.appendChild(h3);
 
     const img = document.createElement('img');
-    img.innerHTML = image.mediaThumb;
     img.setAttribute('src', `img/thumbs/${image.mediaUrl}`);
 
     const a = document.createElement('a');
