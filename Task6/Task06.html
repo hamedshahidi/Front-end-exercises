@@ -1,0 +1,108 @@
+<!-- Front-End Task 06 -->
+<!-- By: Hamed Shahidi -->
+
+<!doctype>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+    
+<body>
+    <ul class="fruits">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li data-foodtype="squishy">Orange</li>
+        <li>Pear</li>
+        <li>Kiwi</li>
+        <li id="berry">Strawberry</li>
+    </ul>
+    
+    
+    <script>
+        const ul = document.querySelectorAll("li");
+        console.log('log ul:',ul);
+
+        
+        // #1
+        console.log('==================================================');
+        console.log('1.');
+        const berryHtmlElement = document.getElementById('berry');
+        const berryInnerHtml = document.querySelector('#berry');
+        
+        console.log('Html Element:');
+        console.log(berryHtmlElement);
+        
+        console.log('Inner Html:');
+        console.log(berryInnerHtml);
+        
+        console.log('I found the berry: ' + berryInnerHtml.innerText);
+        
+        berryHtmlElement.setAttribute('style', 'background-color: red');
+        
+        
+        // #2
+        console.log('==================================================');
+        console.log('2.');
+        console.log('CSS [attribute=value] Selector:');
+        
+        const orange = document.querySelector('li[data-foodtype="squishy"]');
+
+        console.log(orange);
+        
+        console.log('I found the fruit: ' + orange.innerHTML);
+        
+        orange.setAttribute('style','background-color: orange');
+        
+        
+        // #3.1
+        console.log('==================================================');
+        console.log('3.1');
+        console.log('getElementsByTagName()');
+        
+        const liElementsHtmlCollection = document.getElementsByTagName('li')
+        
+        console.log(liElementsHtmlCollection);
+        
+        
+        // #3.2
+        console.log('==================================================');
+        console.log('3.2');
+        console.log('Using for loop on Html collection:');
+        
+        for (let index = 0 ; index < liElementsHtmlCollection.length; index++){
+            
+            const li = liElementsHtmlCollection[index];
+            
+            console.log(li.innerHTML);
+            li.style.width = '100px';
+            li.style.listStyleType = 'none';
+            
+            if (li.innerHTML == 'Pear') {
+                li.style.backgroundColor = 'green';
+                };
+        };
+        
+        
+        // #4.1
+        console.log('==================================================');
+        console.log('4.1');
+        console.log('QuerySelectorAll():');
+        
+        const liElementsNodeList = document.querySelectorAll('li');
+        
+        console.log(liElementsNodeList);
+     
+        
+        // #4.4
+        console.log('==================================================');
+        console.log('4.2');
+        console.log('Using for loop on NodeList:');
+
+        liElementsNodeList.forEach((item)=>{
+            console.log(item.innerHTML);
+            item.style.border = 'solid 2px black';       
+        });
+    </script>
+</body>    
+</html>
